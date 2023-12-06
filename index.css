@@ -1,0 +1,506 @@
+*,*::after,*::before{
+    padding:0;
+    margin:0;
+}
+
+body, html{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.back-image{
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    transition-duration: .5s;
+}
+
+
+.back-image:hover{
+    opacity:0.5;
+    cursor:pointer;
+}
+/* code for mobile view starts here*/
+/*Header code*/
+header{
+    width:100%;
+    height:3rem;
+    padding:0 1rem;
+    background-color:white;
+    box-sizing: border-box;
+    position:relative;
+    z-index:2;
+}
+
+.logo{
+
+    height:2rem;
+    width:10rem;
+    background-image:url(images/logo.svg);
+    background-repeat:no-repeat;
+    margin:auto 0;
+    display:block;
+    margin:0.5rem;
+}
+.btn-hidden{
+    display:none;
+}
+.menu-list{
+    display:none;
+    width:90%;
+    position:absolute;
+    left:5%;
+    height:250px;
+    background-color:white;
+    top:3rem;
+    text-align:center;
+    border-radius: 0.3rem;
+    font-weight:700;
+}
+
+.menu-list ul li{
+    padding:1rem 0;
+    list-style:none;
+    transition-duration:0.5s;
+}
+.menu-list ul li:hover{
+    color: hsl(136, 65%, 51%);
+
+}
+
+.menu{
+    background-image:url("images/icon-menu.svg");
+    height:2rem;
+    width:2rem;
+    background-repeat:no-repeat;
+    background-size: 2rem;
+    position:absolute;
+    top:0;
+    right:1rem;
+    margin:0.5rem;
+}
+
+/*Header section code ends here*/
+
+
+/*Main section code starts here*/
+.first-section{
+    position:relative;
+    z-index:-1;
+}
+
+.bg-intro{
+    background-image:url(images/bg-intro-mobile.svg);
+    height:400px;
+    background-size: 300px;
+    background-repeat:no-repeat;
+    background-position-x: 100%;
+    position:relative;
+}
+
+.mockup{
+
+    position:absolute;
+    top:-100px;
+    right:1%;
+    height:500px;
+    width:90%;
+    background-image: url(images/image-mockups.png);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    z-index: 1;
+    background-position-x: 50%;
+}
+
+.bg-writeup{
+    height:300px;
+    width:100%;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding:0 10%;
+    box-sizing:border-box;
+    font-size:18px;
+}
+
+.bg-writeup h1{
+    font-weight: 700;
+    color: hsl(233, 26%, 24%);
+}
+
+.bg-writeup p{
+    color:hsl(233, 8%, 62%)
+}
+
+.btn{
+    background-color:hsl(136, 65%, 51%);
+    color:white;
+    border:none;
+    border-radius: 3rem;
+    font-size:18px;
+    font-weight: 700;
+    padding:1rem 1rem;
+}
+
+
+/*Second section main starts here*/
+
+.second-section{
+    background-color:hsl(220, 16%, 96%);
+    display:flex;  
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.second-section .first{
+    height:230px;
+    width:100%;
+    box-sizing: border-box;
+    padding:0 10%;
+    text-align:center;
+    display:flex;
+
+    flex-direction: column;
+    color:hsl(233, 8%, 62%);
+}
+
+.second-section .first p, .second-section .first h1{
+    margin:auto auto;
+}
+
+.second-section .second div{
+    height:230px;
+    width:100%;
+    box-sizing: border-box;
+    padding:0 10%;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    color:hsl(233, 8%, 62%);
+}
+
+.second-section div h1{
+    color: hsl(233, 26%, 24%);
+}
+
+.second-section .second img{
+    height:4rem;
+    width:4rem;
+    border-radius: 100%;
+    display:block;
+    align-self: center;
+}
+
+
+/*Third section starts here*/
+
+.third-section{
+    padding:0 5%;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction: column;
+}
+
+.third-section h2{
+    color: hsl(233, 8%, 62%);
+    transition-duration:.5s;
+}
+.third-section h2:hover{
+    color: hsl(136, 65%, 51%);
+}
+.third-section h4{
+    padding:1rem 0;
+}
+
+.third-section .latest-header{
+    height:fit-content;
+    width:fit-content;
+    margin:0 0 0 3%;
+    color: hsl(233, 26%, 24%);
+    position:relative;
+    left:1.4rem;
+}
+
+.third-section .posts{
+    box-sizing:border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.third-section .posts div .picture{
+    height:300px;
+    width:100%;
+    border-radius:1rem;
+    display:block;
+    align-self: center;
+}
+
+.third-section .posts div{
+    box-sizing:border-box;
+    text-align:left;
+    color:hsl(233, 8%, 62%);
+    border-radius:1rem;
+    margin:1rem;
+}
+
+
+
+/*The main section ends here*/
+
+footer{
+    background-color: hsl(233, 26%, 24%) ;
+    color: hsl(0, 0%, 100%);
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align:center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.logo-x{
+    background-blend-mode: 10px;
+    width:fit-content;
+    height:fit-content;
+    margin:0 auto;
+    padding: 2rem 0 1rem 0;
+}
+
+.logo-x img{
+    filter:contrast(500%);
+
+}
+
+footer div ul li{
+    padding:0.5rem 0;
+    list-style:none;
+}
+
+.btn-2{
+    margin:1rem auto;
+    width:10rem;   
+}
+
+footer h3 {
+    margin:0 0 2rem 0;
+}
+
+.social-media{
+    display:flex;
+    margin:0 auto;
+    width:fit-content;
+}
+.social-media div{
+    padding:1rem 0.5rem;
+}
+.desktop{
+    display:none;
+}
+
+@media only screen and (min-width:750px){
+
+/**header code starts**/
+.menu{
+    display:none;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding:0 0 0 5%;
+}
+
+.btn-hidden{
+    display:block;
+    height:2rem;
+    width:7rem;
+    border:none;
+    border-radius:2rem;
+    position:relative;
+    top:0.5rem;
+    margin-right:7rem;
+    color:white;
+}
+
+.menu-list{
+    display:block;
+    height:fit-content;
+    width:45%;
+    position:relative;
+    left:0;
+    top:.5rem;
+    text-align:center;
+}
+
+
+.menu-list ul li{
+    display:inline;
+    padding:0 2rem 0 0;
+    color:hsl(233, 8%, 62%);
+}
+
+/**header code ends here**/
+
+/*The code for main section starts here*/
+
+.first-section{
+    display:flex;
+    flex-direction:row-reverse;
+    height:400px;
+    padding-bottom:4rem;
+    z-index:1;
+}
+
+.first-section div{
+    width:50%;
+}
+
+
+.first-section .bg-intro {
+    background-image: url("images/bg-intro-desktop.svg");
+    background-size: 900px 900px;
+    background-position-x: -10%;
+    background-position-y: center;
+    height:460px;
+}
+
+
+.first-section .mockup{
+    top:-80px;
+    width:100%;
+    background-size: 600px 650px;
+    height: 650px;
+    background-position-x:220%;
+}
+
+.first-section .bg-writeup{
+    text-align:left;
+    margin:auto 0;
+}
+
+.first-section .bg-writeup h1{
+    font-size:3rem
+}
+
+
+.first-section .bg-writeup button{
+    width:12rem;
+}
+
+.second-section{
+    z-index:-1;
+    padding:4rem 0 2rem 0;
+}
+
+.second-section .first p{
+    padding:1rem 0 0 0;
+    width: 50%;
+}
+
+.second-section .first{
+    height:100px;
+    width:100%;
+    text-align:left;
+    margin-bottom: 2rem;
+}
+
+.second-section .second{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    padding:0 10%;
+    box-sizing: border-box;
+}
+
+.second-section .second div{
+    text-align:left;
+    width:25%;
+    padding:0 1% 0 0;
+    position:relative;
+}
+
+
+.second-section .second img{
+    position:relative;
+    margin:0 auto 0 0;
+}
+
+.second-section .first p, .second-section .first h1{
+    margin:0 auto 0 0;
+}
+
+
+.third-section{
+    padding:5% 10%;
+}
+
+
+.latest-header{
+    width:100%;
+    padding:0;
+    position:relative;
+    right:2rem;
+}
+
+
+.third-section .posts{
+    flex-direction:row;
+}
+
+
+.third-section .posts .picture{
+    width:100%;
+    margin:0 auto;
+    height:200px;
+    border-radius: .2rem;
+}
+
+.third-section .posts  div{
+    margin:0.2rem;
+}
+
+
+.third-section .posts  div .para{
+    padding:0 5%;
+}
+
+.third-section .posts  div .para h2{
+    margin:0 0 .5rem 0;
+}
+
+
+footer{
+    display:flex;
+    flex-direction: row;
+    height:fit-content;
+    padding:2%;
+    height:200px;
+}
+
+footer div{
+    height:fit-content;
+    padding:0;
+}
+
+.mobile{
+    display:none;
+}
+
+
+.desktop{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+}
+/*The code for main section ends here*/
+
+
